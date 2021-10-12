@@ -1,0 +1,7 @@
+Panduan penggunaan assignment 1
+
+1. Run code menggunakan mono
+2. Akan tampil menu untuk memilih tiap soalnya (total terdapat 6 soal), klik exit apabila ingin langsung keluar dari menu.
+3. ketik 1 dan klik enter untuk menjalankan soal 1, 
+di akhir setiap jawaban terdapat pertanyaan untuk kembali ke menu, pilih dengan y/n. Apabila memilih y maka akan kembali ke menu, sebaliknya n akan keluar dari program.
+4. untuk menjankan soal lainnya, cukup ikuti kembali langkah 3 dengan input yang disesuaikan dengan nomor soal yang ada di menu.
