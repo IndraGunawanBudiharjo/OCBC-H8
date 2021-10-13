@@ -101,6 +101,7 @@ namespace pro6
 
                 if(pilih != "1" && pilih != "2" && pilih != "3" && pilih != "4") {
                     Console.WriteLine("Silakan pilih nomor kembali");
+                    Console.WriteLine();
                     continue;
                     
                 }
