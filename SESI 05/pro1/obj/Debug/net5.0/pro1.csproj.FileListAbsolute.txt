@@ -1,0 +1,16 @@
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.csproj.AssemblyReference.cache
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.AssemblyInfoInputs.cache
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.AssemblyInfo.cs
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.csproj.CoreCompileInputs.cache
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.exe
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.deps.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.runtimeconfig.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.runtimeconfig.dev.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\ref\pro1.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\bin\Debug\net5.0\pro1.pdb
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\ref\pro1.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.pdb
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 05\pro1\obj\Debug\net5.0\pro1.genruntimeconfig.cache
