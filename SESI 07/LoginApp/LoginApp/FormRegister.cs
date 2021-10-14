@@ -33,9 +33,24 @@ namespace LoginApp
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            db.Execute($"INSERT INTO `user_info` (`name`, `username`, `password`) VALUES ('{tbName.Text}', '{tbUsername.Text}','{tbPassword.Text}')");
 
-            this.Close();
+            if(tbName.Text == "") {
+                MessageBox.Show("Please provide your name");
+            }
+            else if (tbUsername.Text == "") {
+                MessageBox.Show("Please provide your username");
+            }
+            else if (tbPassword.Text == "") {
+                MessageBox.Show("Please provide your password");
+            }
+            else
+            {
+                db.Execute($"INSERT INTO `user_info` (`name`, `username`, `password`) VALUES ('{tbName.Text}', '{tbUsername.Text}','{tbPassword.Text}')");
+                MessageBox.Show("Your profile successfully recorded");
+                this.Close();
+            }
+
+            
         }
 
         private void tbPassword_TextChanged(object sender, EventArgs e)
@@ -47,7 +62,9 @@ namespace LoginApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            FormLogin form = new FormLogin();
+            this.Hide();
+            form.Show();
         }
     }
 }

@@ -14,6 +14,7 @@ namespace LoginApp
     {
         // Initialize the connection class
         Config db = new Config();
+        public int attempt = 3;
         public FormLogin()
         {
             InitializeComponent();
@@ -61,9 +62,21 @@ namespace LoginApp
                 MessageBox.Show("Success You will login as " + db.Results(0, "name"));
 
             }
+            else if (tbLogin.Text == "" || tbPassword.Text == "")
+            {
+                MessageBox.Show("Please fill your username or password correctly");
+            }
             else
             {
-                MessageBox.Show("Wrong username and password combination" );
+                
+                if (attempt == 0)
+                {
+                    MessageBox.Show("Whoops, try again later");
+                    this.Close(); 
+                }
+                MessageBox.Show($"Wrong username and password combination, you have {attempt} more attempts" );
+                attempt--;
+
             }
         }
 
@@ -76,6 +89,7 @@ namespace LoginApp
         private void btnRegister_Click(object sender, EventArgs e)
         {
             // start register window
+            this.Hide();
             FormRegister register = new FormRegister();
             register.Show();
         }
