@@ -78,8 +78,6 @@ C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplicat
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 08\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
