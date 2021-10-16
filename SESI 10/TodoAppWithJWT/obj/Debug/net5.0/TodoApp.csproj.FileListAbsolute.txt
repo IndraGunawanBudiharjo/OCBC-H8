@@ -126,4 +126,3 @@ C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\bin\Debug\ne
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\obj\Debug\net5.0\TodoApp.csproj.CopyComplete

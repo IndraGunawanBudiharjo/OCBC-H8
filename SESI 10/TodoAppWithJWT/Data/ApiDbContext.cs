@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using TodoAppWithJWT.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace TodoAppWithJWT.Data
 {
-    public class ApiDbContext : DbContext
+    public class ApiDbContext : IdentityDbContext
     {
         public virtual DbSet<ItemData> Items {get;set;}
 

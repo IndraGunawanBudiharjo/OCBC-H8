@@ -3,12 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TodoAppWithJWT.Data;
 using TodoAppWithJWT.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace TodoAppWithJWT.Controllers
 {
     [Route("api/[controller]")] // define the routing that our controller going to use
     [ApiController] // specify the type of the controller to let .Net core know
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class TodoController : ControllerBase
     {
         // [Route("TestRun")] // define the routing for this action
