@@ -1,0 +1,2 @@
+INSERT INTO movies.aspnetusers (Id,UserName,NormalizedUserName,Email,NormalizedEmail,EmailConfirmed,PasswordHash,SecurityStamp,ConcurrencyStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEnd,LockoutEnabled,AccessFailedCount) VALUES
+	 ('4e4afc82-5826-4334-b919-b7d4009d2d87','indragb','INDRAGB','indragb@gmail.com','INDRAGB@GMAIL.COM',0,'AQAAAAEAACcQAAAAEDas6zK3bY6QpFgbEk8iYueuGSTHUv+z46YfKEBGWSlS0sQ+4H2OExHfBycHoAbpzg==','MG7TO75SNZNLDOHG3AJTBQVTYQE3SR3M','e6705dc9-08a7-48e6-a4e4-52d2f45e645b',NULL,0,0,NULL,1,0);

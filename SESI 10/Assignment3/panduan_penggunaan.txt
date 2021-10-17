@@ -1,0 +1,12 @@
+1. jalankan project di visual studio code dengan perintah sebagai berikut:
+	a. masuk ke folder Movies
+	b. dotnet build
+	c. dotnet run
+2. tes api menggunakan postman, sebagai berikut:
+	a. https://localhost:5000/api/movies dengan method get untuk return semua data movies
+	b. https://localhost:5000/api/movies/(id) dengan method get untuk return data movie berdasarkan id
+	c. https://localhost:5000/api/movies/ dengan method post untuk insert data movie 
+	d. https://localhost:5000/api/movies/(id) dengan method put untuk update data movie berdasarkan id
+	e. https://localhost:5000/api/movies/(id) dengan method delete untuk menghapus data movie berdasarkan id
+	
+3. catatan settings: dengan implementasi JWT, kita perlu menambahkan token yang didapatkan saat register di dalam header authorization, agar dapat menerima return data movies.

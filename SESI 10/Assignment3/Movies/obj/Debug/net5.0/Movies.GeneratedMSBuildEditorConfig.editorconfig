@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = TodoApp
-build_property.ProjectDir = c:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\TodoAppWithJWT\
+build_property.RootNamespace = Movies
+build_property.ProjectDir = C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 10\Assignment3\Movies\
