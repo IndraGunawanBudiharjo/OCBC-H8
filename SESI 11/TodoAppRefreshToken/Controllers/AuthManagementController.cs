@@ -272,7 +272,7 @@ namespace TodoAppWithJWT.Controllers
                     };
                 }
 
-                // // Validatoin 7 - Validate the id
+                // // Validation 7 - Validate the id
                 var jti = tokenInVerification.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Jti).Value;
 
                 if (storedToken.JwtId != jti)
