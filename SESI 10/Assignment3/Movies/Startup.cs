@@ -36,10 +36,44 @@ namespace Movies
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movies", Version = "v1" });
-            });
+            services.AddSwaggerGen(swagger =>
+                {
+                    swagger
+                        .SwaggerDoc("v1",
+                        new OpenApiInfo {
+                            Title = "TodoApp",
+                            Version = "v1",
+                            Description =
+                                "Authentication and Authorization in ASP.NET 5 with JWT and Swagger"
+                        });
+
+                    // To Enable authorization using Swagger (JWT)
+                    swagger
+                        .AddSecurityDefinition("Bearer",
+                        new OpenApiSecurityScheme()
+                        {
+                            Name = "Authorization",
+                            Type = SecuritySchemeType.ApiKey,
+                            Scheme = "Bearer",
+                            BearerFormat = "JWT",
+                            In = ParameterLocation.Header,
+                            Description =
+                                "Enter 'Bearer' [space] and then your valid token in the text input below.\r\n\r\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+                        });
+                    swagger
+                        .AddSecurityRequirement(new OpenApiSecurityRequirement {
+                            {
+                                new OpenApiSecurityScheme {
+                                    Reference =
+                                        new OpenApiReference {
+                                            Type = ReferenceType.SecurityScheme,
+                                            Id = "Bearer"
+                                        }
+                                },
+                                new string[] { }
+                            }
+                        });
+                });
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApiDbContext>(options => options.UseMySql(
@@ -66,6 +100,7 @@ namespace Movies
                     RequireExpirationTime = false
                 };
             });
+            
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddEntityFrameworkStores<ApiDbContext>();
@@ -77,6 +112,11 @@ namespace Movies
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.Use((context, next) =>
+                    {
+                        context.Response.Headers["Access-Control-Allow-Origin"] = "*";
+                        return next.Invoke();
+                    });
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movies v1"));
             }

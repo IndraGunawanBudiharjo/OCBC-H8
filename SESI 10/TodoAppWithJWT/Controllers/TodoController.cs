@@ -1,13 +1,13 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TodoAppWithJWT.Data;
-using TodoAppWithJWT.Models;
+using TodoApp.Data;
+using TodoApp.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 
 
-namespace TodoAppWithJWT.Controllers
+namespace TodoApp.Controllers
 {
     [Route("api/[controller]")] // define the routing that our controller going to use
     [ApiController] // specify the type of the controller to let .Net core know

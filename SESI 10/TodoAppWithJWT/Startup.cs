@@ -12,14 +12,14 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
-using TodoAppWithJWT.Data;
+using TodoApp.Data;
 using TodoAppWithJWT.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 
-namespace TodoAppWithJWT
+namespace TodoApp
 {
     public class Startup
     {
@@ -68,6 +68,7 @@ namespace TodoAppWithJWT
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddEntityFrameworkStores<ApiDbContext>();
+
 
         }
 
