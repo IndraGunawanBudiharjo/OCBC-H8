@@ -1,0 +1,2 @@
+Heroku: https://finproj-paymentdetails-indragb.herokuapp.com
+Github: https://github.com/IndraGunawanBudiharjo/OCBC-H8/tree/main/FSDO001ONL027_IndraGunawanBudiharjo_FinalProject

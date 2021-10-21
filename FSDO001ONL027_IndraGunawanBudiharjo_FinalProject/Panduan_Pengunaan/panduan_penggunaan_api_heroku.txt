@@ -1,0 +1,32 @@
+Nama Project: REST API PaymentDetails
+Keterangan: Project membuat sebuah api modul payment details dengan method CRUD
+Database: MySql remote
+Tes CRUD: Postman
+Uri: https://finproj-paymentdetails-indragb.herokuapp.com/
+
+
+Langkah-langkah:
+1. Tes project menggunakan postman dengan tembak uri endpointnya. 
+2. Terdapat dua controller atau modul, yakni authmanagement dan paymentdetails
+	1. authmanagement berguna untuk melakukan autentikasi dan otorisasi dengan menggunakan JWT
+	2. paymentdetails berguna untuk menangani method CRUD-nya.
+
+2.a. Modul AuthManagement memiliki tiga method sebagai berikut:
+	1. [POST] /api/AuthManagement/Register : berguna untuk registrasi user
+	2. [POST] /api​/AuthManagement​/Login : berguna untuk login dan mendapatkan token untuk otorisasi
+	3. [POST] /api/AuthManagement/RefreshToken: berguna untuk validasi token
+
+  b. Modul PaymentDetail memiliki lima method sebagai berikut:
+	1. [GET] /api​/PaymentDetail : berguna untuk mendapat semua item 
+	2. [POST] /api/PaymentDetail : berguna untuk insert item
+	3. [GET] /api/PaymentDetail/{PaymentDetailId} : berguna untuk mendapat satu item
+	4. [PUT] /api/PaymentDetail/{PaymentDetailId} : berguna untuk update item
+	5. [DELETE] /api/PaymentDetail/{PaymentDetailId} : berguna untuk hapus item
+
+Catatan tambahan: 
+- Untuk menjalankan method pada modul paymentdetail diperlukan autorisasi terlebih dahulu dengan token yang berstatus aktif.
+- Otorisasi dapat ditambahkan pada tombol authorize yang terletak di sebelah kanan atas swagger.
+- Otorisasi dilakukan dengan format sebagai berikut:
+	Bearer [Token yang direturn saat login]
+- Token dapat kadaluwarsa karena akan direfresh setiap x menit/detik sekali, sehingga apabila token sudah tidak valid 
+  pengguna perlu kembali melakukan login untuk mendapat token dan memperbarui otorisasi.

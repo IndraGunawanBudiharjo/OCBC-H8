@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "6ebece6e-7a74-4eb7-890f-02cfc1feefe9",
+		"name": "PaymentDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/authmanagement/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"marvin\",\r\n  \"email\": \"marvin@gmail.com\",\r\n  \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/authmanagement/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"authmanagement",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/authmanagement/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"marvin@gmail.com\",\r\n  \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/authmanagement/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"authmanagement",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/authmanagement/refreshtoken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI4YzY3NzM4OS0wZTY1LTQyZTYtOGI5MC0zM2I0NDhhNGFiZTMiLCJuYmYiOjE2MzQ4MjM2MDksImV4cCI6MTYzNDgyMzkwOSwiaWF0IjoxNjM0ODIzNjA5fQ.dQwD4bzIuizhKFMO2pQ7gEKhQzVvI66IQq58LYEW_UM\",\r\n \"refreshToken\": \"B7V8CCFL4U786NXPDKBYPSCRFCZGVDW0WZM0d8b68bf-b585-483f-a971-1142eab4f89e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/authmanagement/refreshtoken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"authmanagement",
+						"refreshtoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/PaymentDetail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI5MTU0NzlkMC00YjMzLTQ5MmMtOGVmYi05OGExNWIxM2M5ZGYiLCJuYmYiOjE2MzQ4MjM5MDIsImV4cCI6MTYzNDgyNDIwMiwiaWF0IjoxNjM0ODIzOTAyfQ.Y2SIswlHJUgojO9IQ91XcBOK2aDwkTVXO1DTQc8S6SI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44370/api/PaymentDetail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"PaymentDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/PaymentDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI5MTU0NzlkMC00YjMzLTQ5MmMtOGVmYi05OGExNWIxM2M5ZGYiLCJuYmYiOjE2MzQ4MjM5MDIsImV4cCI6MTYzNDgyNDIwMiwiaWF0IjoxNjM0ODIzOTAyfQ.Y2SIswlHJUgojO9IQ91XcBOK2aDwkTVXO1DTQc8S6SI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cardOwnerName\": \"Aldo\",\r\n  \"cardNumber\": \"ALD25792\",\r\n  \"expirationDate\": \"2022/03/01\",\r\n  \"securityCode\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/PaymentDetail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"PaymentDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/PaymentDetail/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI5MTU0NzlkMC00YjMzLTQ5MmMtOGVmYi05OGExNWIxM2M5ZGYiLCJuYmYiOjE2MzQ4MjM5MDIsImV4cCI6MTYzNDgyNDIwMiwiaWF0IjoxNjM0ODIzOTAyfQ.Y2SIswlHJUgojO9IQ91XcBOK2aDwkTVXO1DTQc8S6SI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/PaymentDetail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"PaymentDetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/PaymentDetail/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI0NWI1MTViZC1iNGIxLTQxNDItYjg1Zi1mMjBiMDdlODA0ZmUiLCJuYmYiOjE2MzQ4MjQwNTIsImV4cCI6MTYzNDgyNDM1MiwiaWF0IjoxNjM0ODI0MDUyfQ.15vDIbBUjHpxGTkoGaRXZjkUKmMfjXsz_1mHa91UmBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentDetailId\": 1,\r\n  \"cardOwnerName\": \"Budi\",\r\n  \"cardNumber\": \"BUD12345\",\r\n  \"expirationDate\": \"2023/02/25\",\r\n  \"securityCode\": \"passwordbaru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/PaymentDetail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"PaymentDetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/PaymentDetail/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImEwYmM1M2VlLWVkNjEtNDc5OS1hYmE2LTYzZWI4MmJiNDUwZSIsImVtYWlsIjoibWFydmluQGdtYWlsLmNvbSIsInN1YiI6Im1hcnZpbkBnbWFpbC5jb20iLCJqdGkiOiI0NWI1MTViZC1iNGIxLTQxNDItYjg1Zi1mMjBiMDdlODA0ZmUiLCJuYmYiOjE2MzQ4MjQwNTIsImV4cCI6MTYzNDgyNDM1MiwiaWF0IjoxNjM0ODI0MDUyfQ.15vDIbBUjHpxGTkoGaRXZjkUKmMfjXsz_1mHa91UmBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44370/api/PaymentDetail/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"api",
+						"PaymentDetail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
