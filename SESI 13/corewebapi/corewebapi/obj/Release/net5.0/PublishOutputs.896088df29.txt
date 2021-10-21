@@ -1,0 +1,11 @@
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\corewebapi.exe
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\appsettings.Development.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\appsettings.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\corewebapi.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\corewebapi.deps.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\corewebapi.runtimeconfig.json
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\corewebapi.pdb
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\Microsoft.OpenApi.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 13\corewebapi\corewebapi\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
