@@ -55,11 +55,16 @@ namespace LoginApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            db.ExecuteSelect("SELECT * FROM `user_info` where username='" + tbLogin.Text + "' and password ='" + tbPassword.Text + "'");
+            //db.ExecuteSelect("SELECT * FROM `user_info` where username='" + tbLogin.Text + "' and password ='" + tbPassword.Text + "'");
+            UserItem item = db.login(tbLogin.Text, tbPassword.Text);
 
-            if(db.Count() == 1)
+            //if(db.Count() == 1)
+            if (item.username != "")
             {
-                MessageBox.Show("Success You will login as " + db.Results(0, "name"));
+                //MessageBox.Show("Success You will login as " + db.Results(0, "name"));
+                //MessageBox.Show($"Success You will login as name: {item.name}, username: {item.username}");
+                FormUser user = new FormUser(item);
+                user.Show();
 
             }
             else if (tbLogin.Text == "" || tbPassword.Text == "")
@@ -91,6 +96,7 @@ namespace LoginApp
             // start register window
             this.Hide();
             FormRegister register = new FormRegister();
+            register.login = this;
             register.Show();
         }
 

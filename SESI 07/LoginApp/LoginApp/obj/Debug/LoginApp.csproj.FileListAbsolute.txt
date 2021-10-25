@@ -35,3 +35,4 @@ C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 07\LoginApp\LoginApp\bin\Debug
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 07\LoginApp\LoginApp\bin\Debug\Renci.SshNet.Async.xml
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 07\LoginApp\LoginApp\obj\Debug\LoginApp.FormLogin.resources
 C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 07\LoginApp\LoginApp\obj\Debug\LoginApp.FormRegister.resources
+C:\Users\Indra\Documents\Belajar\hacktiv8\C#\SESI 07\LoginApp\LoginApp\obj\Debug\LoginApp.FormUser.resources

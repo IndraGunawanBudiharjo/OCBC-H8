@@ -13,6 +13,9 @@ namespace LoginApp
     public partial class FormRegister : Form
     {
         Config db = new Config();
+
+        public FormLogin login;
+
         public FormRegister()
         {
             InitializeComponent();
@@ -48,6 +51,7 @@ namespace LoginApp
                 db.Execute($"INSERT INTO `user_info` (`name`, `username`, `password`) VALUES ('{tbName.Text}', '{tbUsername.Text}','{tbPassword.Text}')");
                 MessageBox.Show("Your profile successfully recorded");
                 this.Close();
+                login.Show();
             }
 
             

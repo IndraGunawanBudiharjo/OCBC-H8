@@ -135,6 +135,34 @@ namespace LoginApp
 			return dt.Rows.Count;
 		}
 
+
+		public UserItem login(string username, string password)
+        {
+			UserItem item = new UserItem();
+
+			using (MySqlConnection conn = new MySqlConnection(connectionString))
+			{
+				conn.Open();
+				MySqlCommand cmd = new MySqlCommand("SELECT * FROM user_info WHERE username = @username AND password = @password", conn);
+				cmd.Parameters.AddWithValue("@username", username);
+				cmd.Parameters.AddWithValue("@password", password);
+
+				using (MySqlDataReader reader = cmd.ExecuteReader())
+				{
+					while (reader.Read())
+					{
+						item = new UserItem()
+						{
+							id = reader.GetInt32("id"),
+							name = reader.GetString("name"),
+							username = reader.GetString("username")
+						};
+					}
+				}
+			}
+			return item;
+        }
+
 	}
 
 }
