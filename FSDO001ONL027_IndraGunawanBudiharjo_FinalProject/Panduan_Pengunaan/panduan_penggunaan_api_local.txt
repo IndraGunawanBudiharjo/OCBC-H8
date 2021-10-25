@@ -13,15 +13,59 @@ Langkah-langkah:
 
 2.a. Modul AuthManagement memiliki tiga method sebagai berikut:
 	1. [POST] /api/AuthManagement/Register : berguna untuk registrasi user
+		
+		format json:
+			{
+  				"username": "string",
+  				"email": "user@example.com",
+  				"password": "string"
+			}
+
 	2. [POST] /api​/AuthManagement​/Login : berguna untuk login dan mendapatkan token untuk otorisasi
+		
+		format json:
+			{ 
+				"email": "user@example.com",
+ 				"password": "string"
+			}
+
 	3. [POST] /api/AuthManagement/RefreshToken: berguna untuk validasi token
+
+		format json:
+			{ 
+  				"token": "string",
+  				"refreshToken": "string"
+			}
+
 
   b. Modul PaymentDetail memiliki lima method sebagai berikut:
 	1. [GET] /api​/PaymentDetail : berguna untuk mendapat semua item 
+
 	2. [POST] /api/PaymentDetail : berguna untuk insert item
+		
+		format json:
+			{ 
+  				"cardOwnerName": "string",
+ 				"cardNumber": "string",
+  				"expirationDate": "string",
+  				"securityCode": "string"
+			}
+
 	3. [GET] /api/PaymentDetail/{PaymentDetailId} : berguna untuk mendapat satu item
+
 	4. [PUT] /api/PaymentDetail/{PaymentDetailId} : berguna untuk update item
+
+		format json:
+			{ 
+  				"paymentDetailId": 0,
+  				"cardOwnerName": "string",
+  				"cardNumber": "string",
+  				"expirationDate": "string",
+  				"securityCode": "string"
+			}
+
 	5. [DELETE] /api/PaymentDetail/{PaymentDetailId} : berguna untuk hapus item
+
 
 Catatan tambahan: 
 - Untuk menjalankan method pada modul paymentdetail diperlukan autorisasi terlebih dahulu dengan token yang berstatus aktif.

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using PaymentDetails.Data;
 using PaymentDetails.Models;
+using PaymentDetails.Models.DTOs.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -28,7 +29,11 @@ namespace PaymentDetails.Controllers
         public async Task<IActionResult> GetItems()
         {
             var PaymentDetails = await _context.PaymentDetail.ToListAsync();
-            return Ok(PaymentDetails);
+            return Ok(new ListMessageResponse()
+            {
+                message = $"Berhasil",
+                item = PaymentDetails
+            });
         }
 
         [HttpPost]
@@ -51,9 +56,19 @@ namespace PaymentDetails.Controllers
             var PaymentDetail = await _context.PaymentDetail.FirstOrDefaultAsync(x => x.PaymentDetailId == PaymentDetailId);
 
             if (PaymentDetail == null)
-                return NotFound();
-
-            return Ok(PaymentDetail);
+            {
+                return NotFound(new MessageResponse()
+                {
+                    message = $"Whoops, id: {PaymentDetailId} tidak ditemukan",
+                    item = null
+                }); 
+            }  
+                
+            return Ok(new MessageResponse()
+            {
+                message = $"Berhasil",
+                item = PaymentDetail
+            });
         }
 
         [HttpPut("{PaymentDetailId}")]
@@ -65,7 +80,11 @@ namespace PaymentDetails.Controllers
             var existItem = await _context.PaymentDetail.FirstOrDefaultAsync(x => x.PaymentDetailId == PaymentDetailId);
 
             if (existItem == null)
-                return NotFound();
+                return NotFound(new MessageResponse()
+                {
+                    message = $"Whoops, id: {PaymentDetailId} tidak ditemukan",
+                    item = null
+                });
 
             existItem.CardOwnerName = paymentDetail.CardOwnerName;
             existItem.CardNumber = paymentDetail.CardNumber;
@@ -75,7 +94,12 @@ namespace PaymentDetails.Controllers
             // Implement the changes on the database level
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            //return NoContent();
+            return Ok(new MessageResponse()
+            {
+                message = $"Data dengan id: {PaymentDetailId} berhasil diupdate",
+                item = existItem
+            });
         }
 
         [HttpDelete("{PaymentDetailId}")]
@@ -84,12 +108,20 @@ namespace PaymentDetails.Controllers
             var existItem = await _context.PaymentDetail.FirstOrDefaultAsync(x => x.PaymentDetailId == PaymentDetailId);
 
             if (existItem == null)
-                return NotFound();
+                return NotFound(new MessageResponse()
+                {
+                    message = $"Whoops, id: {PaymentDetailId} tidak ditemukan",
+                    item = null
+                });
 
             _context.PaymentDetail.Remove(existItem);
             await _context.SaveChangesAsync();
 
-            return Ok(existItem);
+            return Ok(new MessageResponse()
+            {
+                message = $"Data dengan id: {PaymentDetailId} berhasil dihapus",
+                item = existItem
+            });
         }
     }
 }
